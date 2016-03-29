@@ -27,12 +27,11 @@ body { font-family: 'Open Sans', sans-serif; }
 .gallery-cell {
   width: 100%;
   /*background: #8C8;*/
-  counter-increment: gallery-cell;
 }
 
 .cell-content {
   text-align: center;
-  margin: 1em 5em;
+  margin: 1em 3em;
   font-size: 1.2em;
 }
 
@@ -42,13 +41,32 @@ body { font-family: 'Open Sans', sans-serif; }
     margin: 0 auto;
 }
 
-/* cell number 
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 300px;
-  font-size: 80px;
-  color: white;
+
+@media all and (max-width: 860px) {
+	/*Woo a media query*/
+ 	body{
+ 		background-color: red;
+ 	}
+    
+    .gallery{
+        width: 100%;
+    }
 }
-*/
+
+@media all and (max-width: 600px) {
+	/*Woo a media query*/
+ 	body{
+ 		background-color: blue;
+ 	}
+    
+    .gallery{
+        width: 100%;
+    }
+    .cell-content{
+        margin: 0.5em;
+        font-size: 1em;
+    }
+    .cell-image{
+        width: 50%;
+    }
+}
