@@ -1,0 +1,54 @@
+#p1{
+    background-color: aqua;
+}
+
+#p2{
+    background-color: aquamarine;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: 'Open Sans', sans-serif; }
+
+#content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery {
+  background: white;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.gallery-cell {
+  width: 100%;
+  /*background: #8C8;*/
+  counter-increment: gallery-cell;
+}
+
+.cell-content {
+  text-align: center;
+  margin: 1em 5em;
+  font-size: 1.2em;
+}
+
+.cell-image{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* cell number 
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 300px;
+  font-size: 80px;
+  color: white;
+}
+*/
