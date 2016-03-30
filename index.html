@@ -27,6 +27,8 @@
   <!-- JS 
   -------------------------------------------------- -->
   <script src="js/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,6 +40,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="content">
+    	  <div class="bg" data-ibg-bg="images/bg.jpg"></div>
     <div id="p1">     
     <h1>Coat or Hat?</h1>
       <div class="row">
@@ -66,7 +69,7 @@
     <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": true, "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
     <div class="gallery-cell">
       <img class="cell-image" src="images/single.png" alt="MetService User">
-      <p class="cell-content">MetService would create a suggested outfit for the current location which is calculated from their scientific data and user data collected through the app service.</p>
+      <p class="cell-content">MetService would create a suggested outfit for the current location which is calculated from their scientific data and user data collected through the new app service.</p>
     </div>
     <div class="gallery-cell">
       <img class="cell-image" src="images/others.png" alt="Other Users">
@@ -90,6 +93,19 @@
       </div>
     </div>
 </div>
+    <div class="main">
+    	  <div class="bg" data-ibg-bg="bg.jpg"></div>
+    	</div>
+    <script type="text/javascript">
+        $(".bg").interactive_bg();
+        // change background size on window resize
+          $(window).resize(function() {
+              $(".bg > .ibg-bg").css({
+                width: $(window).outerWidth(),
+                height: $(window).outerHeight()
+              })
+           })
+      </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
