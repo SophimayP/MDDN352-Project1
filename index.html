@@ -41,18 +41,13 @@
     <img id="bground" src="images/backcloud.png" alt="Background Image">
 
 <div id="content">
-    
-    <div id="p1">
-        <h1>Coat or Hat?</h1>
-    </div>
-    
     <div class="pMids">
         <div class="row">
-            <div class="one-third column">
-                <h2>Conceptual Idea</h2>
+            <div class="one-half column">
+                <img id="logo" src="images/logowhite.png" alt="logo">
             </div>
-            <div class="two-thirds column">
-                <p>The challenge I chose to address from the MetService lecture was to "do something different with presenting weather". An issue that was talked about was how to get more people interested in the weather - and in turn increase the users of MetService. Often people just check the weather to see what to wear and my approach is to design a service that will directly show this. This will be achieved by a mobile friendly website which instead of displaying the temperature and weather in scientific ways (e.g. degrees) will display it the in human friendly way of what to wear. Below are the three different ways this data will be displayed.</p>
+            <div class="one-half column">
+                <p id="text1">Coat or Hat? is a fresh look at the weather forecast. Often people only check the weather in order to work out what to wear before they head outside. Coat or Hat? takes a playful and direct approach to this interaction by allowing users to view humanised data instead of scientific. Rather than trying to translate degrees into layers of clothing users can see a visual of what to wear. This will be in the form of three interactions on the mobile friendly website and companion app for those who prefer not go through a browser on their mobile device.</p>
             </div>
         </div>
     </div>
@@ -60,31 +55,122 @@
 
     <!-- Conceptual Idea slider
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": true, "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": true, "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": true }'>
         <div class="gallery-cell">
             <img class="cell-image" src="images/single.png" alt="MetService User">
-            <p class="cell-content">MetService would create a suggested outfit for the current location which is calculated from their scientific data and user data collected through the new app service.</p>
+            <p class="cell-content">A suggested outfit for the current location is calculated from the scientific forecast data and a summary of  user data collected through the new service.</p>
         </div>
         <div class="gallery-cell">
             <img class="cell-image" src="images/others.png" alt="Other Users">
-            <p class="cell-content">The user can then see other users entries of what they are wearing spreading out from this. These entries are relevant to the current location the user is in.</p>
+            <p class="cell-content">The user also can then see other users entries of what they are wearing spreading out from this. These entries are relevant to the current location the user is in.</p>
         </div>
         <div class="gallery-cell">
             <img class="cell-image" src="images/you.png" alt="User Input">
-            <p class="cell-content">And finally the user can also input their choice of outfit for the day, allowing MetService to collect data and other users to see the users decision to influence their own.</p>
+            <p class="cell-content">And finally the user can also input their choice of outfit for the day, allowing collection of data to enable the fun ability to see what others have chosen to wear in different locations.</p>
         </div>
     </div>
     
     <div class="pMids">
         <div class="row">
-            <div class="two-thirds column">
-                <p>The challenge I chose to address from the MetService lecture was to "do something different with presenting weather". An issue that was talked about was how to get more people interested in the weather - and in turn increase the users of MetService. Often people just check the weather to see what to wear and my approach is to design a service that will directly show this. This will be achieved by a mobile friendly website which instead of displaying the temperature and weather in scientific ways (e.g. degrees) will display it the in human friendly way of what to wear. Below are the three different ways this data will be displayed.</p>
+            <div class="one-half column">
+                <p>This makes the mobile service especially useful to travellers wanting to check out what to wear when they arrive at their destination. Coat or Hat? also offers opportunities for local businesses to advertise their products relevant to what users are wearing on the day. For example a travelling arriving at their destination may see that most people in the area are wearing beanies and nearby shops selling beanies can be suggested.</p>
             </div>
-            <div class="one-third column">
-                <h2>Conceptual Idea</h2>
+            <div class="one-half column">
+                <p>The user enters their outfit by using a friendly draggable slider to add on layers and layers of clothing. This scale corresponds to temperature data and therefore can be translated into an emotive collection of the relative degrees people feel it is outside. Also there will be option for the user to select a raincoat and other specific weather related accessories.</p>
             </div>
         </div>
     </div>
+    
+    <!-- hot to cold slider
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": true, "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": true }'>  
+        <div class="gallery-cell">
+            <img class="big-cell-image" src="images/cold.png" alt="logo">
+        </div>
+        <div class="gallery-cell">
+            <img class="big-cell-image" src="images/med.png" alt="logo">
+        </div>
+        <div class="gallery-cell">
+            <img class="big-cell-image" src="images/hot.png" alt="logo">
+        </div>
+    </div>
+    
+    <div class="pMids">
+        <div class="row">
+            <div class="one-half column">
+                <p>This allows the user to input information in a way that is aesthetically pleasing and fun to use to encourage data collection. Also needed will be a geolocation API so that the user can be shown other entries relevant to their location and so that the data they submit will have a location logged. To construct the website a framework and plugins would also be used as well as a database to store accounts and other information.</p>
+            </div>
+            <div class="one-half column">
+                <p>Users will have an accounts so that they can upload their choices and rate others on their accuracy allowing a reputation based form of troll prevention. Everyone enjoys a peek into others’ lives and Coat or Hat? satisfies that need without breaching privacy as all that is shown is the username and city the user is located in.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- mock phones slider
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": true, "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": true }'>
+        <div class="gallery-cell">
+            <p class="cell-content">Technical Requirements:</p>
+            <p class="cell-content">HTML and CSS will be used to create the website along with jQuery and Javascript.</p>
+            <p class="cell-content">Skeleton is a framework which I tested to make this concept article and found it satifactory. It's simple column system stacks well for mobile and does not have the styling of bootstrap which will make the unique aesthetic of the new website easy to do. <a href="http://getskeleton.com/">Skeleton Website</a></p>
+            <p class="cell-content">App:</p>
+            <p class="cell-content">The app will be very similar to the website except with additional functions specific to the mobile device.</p>
+            <p class="cell-content">Notifications can be used to advise the user what others are wearing, to remind them to check what to wear or to remind them to enter their own outfit. They can also be used for the travel aspect to notify the user that they may need to change their outfit upon nearing their destination.</p>
+        </div>
+        <div class="gallery-cell">
+            <img class="big-cell-image" src="images/mockphones.png" alt="logo">
+        </div>
+        <div class="gallery-cell">
+            <p class="cell-content">The location finder can be implemented the Google geolocation API</p>
+            <p class="cell-content">(See basic implementation below)</p>
+             <div id="map"></div>
+            <script>
+              // Note: This example requires that you consent to location sharing when
+              // prompted by your browser. If you see the error "The Geolocation service
+              // failed.", it means you probably did not give permission for the browser to
+              // locate you.
+
+              function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: -34.397, lng: 150.644},
+                  zoom: 6
+                });
+                var infoWindow = new google.maps.InfoWindow({map: map});
+
+                // Try HTML5 geolocation.
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(function(position) {
+                    var pos = {
+                      lat: position.coords.latitude,
+                      lng: position.coords.longitude
+                    };
+
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent('Location found.');
+                    map.setCenter(pos);
+                  }, function() {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                  });
+                } else {
+                  // Browser doesn't support Geolocation
+                  handleLocationError(false, infoWindow, map.getCenter());
+                }
+              }
+
+              function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                infoWindow.setPosition(pos);
+                infoWindow.setContent(browserHasGeolocation ?
+                                      'Error: The Geolocation service failed.' :
+                                      'Error: Your browser doesn\'t support geolocation.');
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ7402uvsGRTOP_pqKkRm3fjWXbeIJ7pg&callback=initMap">
+            </script>
+        </div>
+    </div>
+   
+    <p id="text1" class="pMids">Sophie Price // MDDN352 // Project 1 // 2016</p>
 
 </div>
 
@@ -92,4 +178,3 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-
