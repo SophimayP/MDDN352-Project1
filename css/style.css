@@ -1,11 +1,3 @@
-#p1{
-    background-color: aqua;
-}
-
-#p2{
-    background-color: aquamarine;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,23 +7,34 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*background moviething*/
-.bg {
-  width: 100%px;
-  height: 200px;
-  margin: auto;
+#p1{
+    color: white;
+    text-align: center;
 }
 
+.pMids{
+    background-color: white;
+    padding: 1em 5em;
+    margin: 1em 0;
+}
+
+
+#bground{
+    height:100%;
+    width:100%;
+    position: fixed;
+}
 
 /*other stuffs*/
 #content{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    position: absolute;
 }
 
 .gallery {
-  background-color: rgba(255, 0, 0, 0.4);
-  width: 70%;
+  background-color: white;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -42,22 +45,28 @@ body {
 
 .cell-content {
   text-align: center;
-  margin: 1em 3em;
+  margin: 1em 8em;
   font-size: 1.2em;
 }
 
 .cell-image{
-    width: 30%;
+    width: 18%;
     display: block;
     margin: 1em auto 0 auto;
 }
 
 
-@media all and (max-width: 860px) {
+@media all and (max-width: 900px) {
 	/*Woo a media query*/
- 	body{
- 		background-color: red;
- 	}
+ 	#bground{
+        height:100%;
+        width:auto;
+        position: fixed;
+    }
+    
+    .pMids{
+        padding: 0.5em 1em;
+    }
     
     .gallery{
         width: 100%;
@@ -66,9 +75,11 @@ body {
 
 @media all and (max-width: 600px) {
 	/*Woo a media query*/
- 	body{
- 		background-color: blue;
- 	}
+ 	#bground{
+        height:100%;
+        width:auto;
+        position: fixed;
+    }
     
     .gallery{
         width: 100%;
